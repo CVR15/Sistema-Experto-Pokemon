@@ -1,0 +1,50 @@
+CREATE DATABASE se_pkm;
+USE se_pkm;
+
+CREATE TABLE tabla_tipos  (
+    Ataque VARCHAR(50) NOT NULL,
+    Acero FLOAT NOT NULL,
+    Agua FLOAT NOT NULL,
+    Bicho FLOAT NOT NULL,
+    Dragon FLOAT NOT NULL,
+    Electrico FLOAT NOT NULL,
+    Fantasma FLOAT NOT NULL,
+    Fuego FLOAT NOT NULL,
+    Hada FLOAT NOT NULL,
+    Hielo FLOAT NOT NULL,
+    Lucha FLOAT NOT NULL,
+    Normal FLOAT NOT NULL,
+    Planta FLOAT NOT NULL,
+    Psiquico FLOAT NOT NULL,
+    Roca FLOAT NOT NULL,
+    Siniestro FLOAT NOT NULL,
+    Tierra FLOAT NOT NULL,
+    Veneno FLOAT NOT NULL,
+    Volador FLOAT NOT NULL,
+    PRIMARY KEY(Ataque)
+)
+;
+
+INSERT INTO tabla_tipos
+    (Ataque,Acero,Agua,Bicho,Dragon ,Electrico ,Fantasma,Fuego,Hada,Hielo,Lucha,Normal,Planta,Psiquico ,Roca,Siniestro ,Tierra ,Veneno,Volador)
+
+VALUES
+    ('Acero',0.5,0.5,1,1,0.5,1,0.5,2,2,1,1,1,1,2,1,1,1,1),
+    ('Agua',1,0.5,1,0.5,1,1,2,1,1,1,1,0.5,1,2,1,2,1,1),
+    ('Bicho',0.5,1,1,1,1,0.5,0.5,0.5,1,0.5,1,2,2,1,2,1,0.5,0.5),
+    ('Dragon' ,0.5,1,1,2,1,1,1,0,1,1,1,1,1,1,1,1,1,1),
+    ('Electrico' ,1,2,1,0.5,0.5,1,1,1,1,1,1,0.5,1,1,1,0,1,2),
+    ('Fantasma',1,1,1,1,1,2,1,1,1,1,0,1,2,1,0.5,1,1,1),
+    ('Fuego',2,0.5,2,0.5,1,1,0.5,1,2,1,1,2,1,0.5,1,1,1,1),
+    ('Hada',0.5,1,1,2,1,1,0.5,1,1,2,1,1,1,1,2,1,0.5,1),
+    ('Hielo',0.5,0.5,1,2,1,1,0.5,1,0.5,1,1,2,1,1,1,2,1,2),
+    ('Lucha',2,1,0.5,1,1,0,1,0.5,2,1,2,1,0.5,2,2,1,0.5,0.5),
+    ('Normal',0.5,1,1,1,1,0,1,1,1,1,1,1,1,0.5,1,1,1,1),
+    ('Planta',0.5,2,0.5,0.5,1,1,0.5,1,1,1,1,0.5,1,2,1,2,0.5,0.5),
+    ('Psiquico' ,0.5,1,1,1,1,1,1,1,1,2,1,1,0.5,1,0,1,2,1),
+    ('Roca',0.5,1,2,1,1,1,2,1,2,0.5,1,1,1,1,1,0.5,1,2),
+    ('Siniestro' ,1,1,1,1,1,2,1,0.5,1,0.5,1,1,2,1,0.5,1,1,1),
+    ('Tierra' ,2,1,0.5,1,2,1,2,1,1,1,1,0.5,1,2,1,1,2,0),
+    ('Veneno',0,1,1,1,1,0.5,1,2,1,1,1,2,1,0.5,1,0.5,0.5,1),
+    ('Volador',0.5,1,2,1,0.5,1,1,1,1,2,1,2,1,0.5,1,1,1,1)
+;
